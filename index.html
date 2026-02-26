@@ -174,72 +174,96 @@
 
     <div class="gallery">
 
-      <!-- Bilder -->
-      <figure class="shot">
-        <img src="assets/gallery-1.jpg" alt="Objekt Beispiel 1">
-      </figure>
+      <!-- ===== GALERIE ===== -->
 
-      <figure class="shot">
-        <img src="assets/gallery-2.jpg" alt="Objekt Beispiel 2">
-      </figure>
+<!-- Bilder -->
+<figure class="shot">
+  <a href="assets/gallery-1.jpg" class="lightbox-trigger" data-type="image">
+    <img src="assets/gallery-1.jpg" alt="Objekt Beispiel 1" loading="lazy">
+  </a>
+</figure>
 
-      <figure class="shot">
-        <img src="assets/gallery-3.jpg" alt="Objekt Beispiel 3">
-      </figure>
+<figure class="shot">
+  <a href="assets/gallery-2.jpg" class="lightbox-trigger" data-type="image">
+    <img src="assets/gallery-2.jpg" alt="Objekt Beispiel 2" loading="lazy">
+  </a>
+</figure>
 
-      <figure class="shot">
-        <img src="assets/gallery-4.jpg" alt="Objekt Beispiel 4">
-      </figure>
+<figure class="shot">
+  <a href="assets/gallery-3.jpg" class="lightbox-trigger" data-type="image">
+    <img src="assets/gallery-3.jpg" alt="Objekt Beispiel 3" loading="lazy">
+  </a>
+</figure>
 
-      <figure class="shot">
-        <img src="assets/gallery-5.jpg" alt="Objekt Beispiel 5">
-      </figure>
+<figure class="shot">
+  <a href="assets/gallery-4.jpg" class="lightbox-trigger" data-type="image">
+    <img src="assets/gallery-4.jpg" alt="Objekt Beispiel 4" loading="lazy">
+  </a>
+</figure>
 
-      <figure class="shot">
-        <img src="assets/gallery-6.jpg" alt="Objekt Beispiel 6">
-      </figure>
+<figure class="shot">
+  <a href="assets/gallery-5.jpg" class="lightbox-trigger" data-type="image">
+    <img src="assets/gallery-5.jpg" alt="Objekt Beispiel 5" loading="lazy">
+  </a>
+</figure>
 
-      <figure class="shot">
-        <img src="assets/gallery-7.jpg" alt="Objekt Beispiel 7">
-      </figure>
+<figure class="shot">
+  <a href="assets/gallery-6.jpg" class="lightbox-trigger" data-type="image">
+    <img src="assets/gallery-6.jpg" alt="Objekt Beispiel 6" loading="lazy">
+  </a>
+</figure>
 
-      <figure class="shot">
-        <img src="assets/gallery-8.jpg" alt="Objekt Beispiel 8">
-      </figure>
+<figure class="shot">
+  <a href="assets/gallery-7.jpg" class="lightbox-trigger" data-type="image">
+    <img src="assets/gallery-7.jpg" alt="Objekt Beispiel 7" loading="lazy">
+  </a>
+</figure>
 
-      <figure class="shot">
-        <img src="assets/gallery-9.jpg" alt="Objekt Beispiel 9">
-      </figure>
+<figure class="shot">
+  <a href="assets/gallery-8.jpg" class="lightbox-trigger" data-type="image">
+    <img src="assets/gallery-8.jpg" alt="Objekt Beispiel 8" loading="lazy">
+  </a>
+</figure>
 
-      <figure class="shot">
-        <img src="assets/gallery-10.jpg" alt="Objekt Beispiel 10">
-      </figure>
+<figure class="shot">
+  <a href="assets/gallery-9.jpg" class="lightbox-trigger" data-type="image">
+    <img src="assets/gallery-9.jpg" alt="Objekt Beispiel 9" loading="lazy">
+  </a>
+</figure>
 
-      <!-- Videos -->
-      <figure class="shot">
-        <video controls>
-          <source src="assets/video-1.mp4" type="video/mp4">
-        </video>
-      </figure>
+<figure class="shot">
+  <a href="assets/gallery-10.jpg" class="lightbox-trigger" data-type="image">
+    <img src="assets/gallery-10.jpg" alt="Objekt Beispiel 10" loading="lazy">
+  </a>
+</figure>
 
-      <figure class="shot">
-        <video controls>
-          <source src="assets/video-2.mp4" type="video/mp4">
-        </video>
-      </figure>
 
-      <figure class="shot">
-        <video controls>
-          <source src="assets/video-3.mp4" type="video/mp4">
-        </video>
-      </figure>
+<!-- Videos -->
+<figure class="shot">
+  <a href="assets/video-1.mp4" class="lightbox-trigger" data-type="video">
+    <video src="assets/video-1.mp4" muted></video>
+  </a>
+</figure>
 
-      <figure class="shot">
-        <video controls>
-          <source src="assets/video-4.mp4" type="video/mp4">
-        </video>
-      </figure>
+<figure class="shot">
+  <a href="assets/video-2.mp4" class="lightbox-trigger" data-type="video">
+    <video src="assets/video-2.mp4" muted></video>
+  </a>
+</figure>
 
+<figure class="shot">
+  <a href="assets/video-3.mp4" class="lightbox-trigger" data-type="video">
+    <video src="assets/video-3.mp4" muted></video>
+  </a>
+</figure>
+
+<figure class="shot">
+  <a href="assets/video-4.mp4" class="lightbox-trigger" data-type="video">
+    <video src="assets/video-4.mp4" muted></video>
+  </a>
+</figure>
+
+<!-- ===== ENDE GALERIE ===== -->
     </div>
   </div>
 </section>
@@ -357,5 +381,9 @@
   </main>
 
   <script src="script.js"></script>
+  <div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <div class="lightbox-content" id="lightboxContent"></div>
+</div>
 </body>
 </html>

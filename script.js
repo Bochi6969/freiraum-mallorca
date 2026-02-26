@@ -84,7 +84,7 @@ const i18n = {
     "hero.kicker": "Property Preparation & Handover Service",
     "hero.title": "Discreet. Structured. Reliable.",
     "hero.subtitle": "We prepare properties in Mallorca for handover, sale or new tenancy – including photo documentation and clear communication (DE/EN).",
-    "hero.ctaPrimary": "Request a quote",
+    "hero.ctaPrimary": "Free initial assessment",
     "hero.ctaSecondary": "View services",
     "hero.trust1": "Fixed price after assessment",
     "hero.trust2": "Photo report & handover checklist",
@@ -172,4 +172,43 @@ applyLang(saved || "de");
 document.getElementById("langBtn").addEventListener("click", () => {
   const current = document.documentElement.getAttribute("data-lang") || "de";
   applyLang(current === "de" ? "en" : "de");
+});
+// ===== Lightbox Funktion =====
+document.addEventListener("DOMContentLoaded", function(){
+
+  const lightbox = document.getElementById("lightbox");
+  const lightboxContent = document.getElementById("lightboxContent");
+  const lightboxClose = document.getElementById("lightboxClose");
+
+  document.querySelectorAll(".lightbox-trigger").forEach(el => {
+    el.addEventListener("click", function(e){
+      e.preventDefault();
+
+      const type = this.getAttribute("data-type");
+      const src = this.getAttribute("href");
+
+      lightbox.style.display = "flex";
+
+      if(type === "image"){
+        lightboxContent.innerHTML = `<img src="${src}">`;
+      }
+
+      if(type === "video"){
+        lightboxContent.innerHTML = `<video src="${src}" controls autoplay></video>`;
+      }
+    });
+  });
+
+  lightboxClose.addEventListener("click", () => {
+    lightbox.style.display = "none";
+    lightboxContent.innerHTML = "";
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if(e.target === lightbox){
+      lightbox.style.display = "none";
+      lightboxContent.innerHTML = "";
+    }
+  });
+
 });
