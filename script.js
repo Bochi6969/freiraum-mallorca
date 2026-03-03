@@ -29,15 +29,12 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// Contact form (placeholder)
-// -> Hier kannst du später Netlify Forms, Formspree oder ein eigenes Backend anklemmen.
+// Netlify Form UX (optional enhancement)
 const form = document.getElementById("leadForm");
 const statusEl = document.getElementById("formStatus");
 
 if (form && statusEl) {
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    statusEl.textContent = "Danke! Anfrage ist vorbereitet – bitte Formular-Backend verbinden (Netlify/Formspree).";
-    form.reset();
+  form.addEventListener("submit", () => {
+    statusEl.textContent = "Sende… bitte einen Moment.";
   });
 }
