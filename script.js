@@ -29,12 +29,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// Netlify Form UX (optional enhancement)
-const form = document.getElementById("leadForm");
+// Form status
+const form = document.querySelector('form[name="ersteinschaetzung"]');
 const statusEl = document.getElementById("formStatus");
-
 if (form && statusEl) {
   form.addEventListener("submit", () => {
-    statusEl.textContent = "Sende… bitte einen Moment.";
+    statusEl.textContent = "Sende…";
   });
 }
