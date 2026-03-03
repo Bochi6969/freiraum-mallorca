@@ -1,374 +1,300 @@
 <!doctype html>
-<html lang="de" data-lang="de">
+<html lang="de">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FreiRaum Mallorca – Objektvorbereitung & Übergabeservice</title>
-  <meta name="description" content="FreiRaum Mallorca: Diskrete Objektvorbereitung & Übergabeservice für deutschsprachige Eigentümer und Makler auf Mallorca. DE/EN. Struktur, Diskretion, Verlässlichkeit." />
-  <meta name="theme-color" content="#0b0b0c" />
-
-  <meta property="og:title" content="FreiRaum Mallorca" />
-  <meta property="og:description" content="Objektvorbereitung & Übergabeservice auf Mallorca – diskret, strukturiert, zuverlässig. DE/EN." />
-  <meta property="og:type" content="website" />
-
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VALORIS Auftragsstruktur – Planbare Kundengewinnung</title>
+  <meta name="description" content="VALORIS entwickelt messbare Systeme zur planbaren Generierung kaufbereiter Anfragen – datenbasiert, seriös, wirtschaftlich." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a class="brand" href="#top" aria-label="FreiRaum Mallorca">
-        <span class="brand__mark">FR</span>
-        <span class="brand__name">FreiRaum <span class="gold">Mallorca</span></span>
+      <a class="brand" href="#top" aria-label="Start">
+        <span class="brand__name">VALORIS</span>
+        <span class="brand__sub">Auftragsstruktur</span>
       </a>
 
       <nav class="nav">
-        <a href="#leistungen" data-i18n="nav.services">Leistungen</a>
-        <a href="#ablauf" data-i18n="nav.process">Ablauf</a>
-        <a href="#zielgruppen" data-i18n="nav.forWhom">Für wen</a>
-        <a href="#kontakt" class="btn btn--sm" data-i18n="nav.contact">Kontakt</a>
-
-        <button class="lang" id="langBtn" type="button" aria-label="Sprache wechseln">
-          <span class="lang__pill"><span id="langLabel">DE</span> / EN</span>
-        </button>
+        <a href="#system">System</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt" class="btn btn--small">Ersteinschätzung</a>
       </nav>
+
+      <button class="burger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" hidden>
+      <a href="#system">System</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#kontakt">Ersteinschätzung</a>
     </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__copy">
-          <p class="kicker" data-i18n="hero.kicker">Objektvorbereitung & Übergabeservice</p>
-          <h1 class="title" data-i18n="hero.title">Diskret. Strukturiert. Zuverlässig.</h1>
-          <p class="subtitle" data-i18n="hero.subtitle">
-            Wir bereiten Immobilien auf Mallorca professionell für Übergabe, Verkauf oder Neuvermietung vor – inklusive Fotodokumentation und klarer Kommunikation (DE/EN).
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">Messbar. Wirtschaftlich. Skalierbar.</p>
+          <h1>Planbare Auftragsstruktur statt Zufall.</h1>
+          <p class="lead">
+            VALORIS entwickelt strukturierte Systeme zur planbaren Generierung kaufbereiter Anfragen –
+            datenbasiert, messbar und auf Wirtschaftlichkeit gebaut.
           </p>
 
           <div class="hero__cta">
-            <a class="btn" href="#kontakt" data-i18n="hero.ctaPrimary">Angebot anfragen</a>
-            <a class="btn btn--ghost" href="#leistungen" data-i18n="hero.ctaSecondary">Leistungen ansehen</a>
+            <a class="btn" href="#kontakt">Kostenfreie Ersteinschätzung</a>
+            <a class="btn btn--ghost" href="#system">System ansehen</a>
           </div>
 
           <div class="trust">
             <div class="trust__item">
-              <span class="dot"></span><span data-i18n="hero.trust1">Festpreis nach Objektanalyse</span>
+              <div class="trust__kpi">A</div>
+              <div class="trust__txt">Analyse & Struktur</div>
             </div>
             <div class="trust__item">
-              <span class="dot"></span><span data-i18n="hero.trust2">Fotobericht & Übergabeprotokoll</span>
+              <div class="trust__kpi">B</div>
+              <div class="trust__txt">Systemaufbau</div>
             </div>
             <div class="trust__item">
-              <span class="dot"></span><span data-i18n="hero.trust3">Deutschsprachiger Ansprechpartner</span>
+              <div class="trust__kpi">C</div>
+              <div class="trust__txt">Optimierung & Führung</div>
             </div>
           </div>
         </div>
 
         <div class="hero__card">
           <div class="card">
-            <p class="card__eyebrow" data-i18n="card.eyebrow">Schnellstart</p>
-            <h3 class="card__title" data-i18n="card.title">In 3 Schritten zum sauberen Übergang</h3>
-            <ol class="steps">
-              <li data-i18n="card.step1">Fotos/Details senden oder Vor-Ort-Termin</li>
-              <li data-i18n="card.step2">Festpreisangebot mit Leistungsumfang</li>
-              <li data-i18n="card.step3">Durchführung + Fotodokumentation</li>
-            </ol>
-            <a class="btn btn--sm btn--wide" href="#kontakt" data-i18n="card.cta">Jetzt anfragen</a>
-            <p class="card__note" data-i18n="card.note">Diskret & zuverlässig – ideal für Eigentümer, die nicht vor Ort sind.</p>
+            <h3>Was du bekommst</h3>
+            <ul class="list">
+              <li><span class="dot"></span>Keyword- & Marktlogik (kaufbereite Nachfrage)</li>
+              <li><span class="dot"></span>Landingpage-Struktur (Conversion-Fokus)</li>
+              <li><span class="dot"></span>Tracking & Kennzahlen (Kosten pro Anfrage / Kunde)</li>
+              <li><span class="dot"></span>Google Ads Struktur (sauber, kontrollierbar)</li>
+              <li><span class="dot"></span>Reporting & Optimierung (keine Bauchentscheidungen)</li>
+            </ul>
+            <div class="card__meta">
+              <span class="tag">1-Seiten-Setup</span>
+              <span class="tag">Performance-Fokus</span>
+              <span class="tag">Seriöser B2B-Auftritt</span>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="hero__glow" aria-hidden="true"></div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="section" id="leistungen">
+    <!-- PROBLEM / SHIFT -->
+    <section class="section">
       <div class="container">
-        <div class="section__head">
-          <h2 data-i18n="services.title">Leistungen</h2>
-          <p data-i18n="services.subtitle">Modular buchbar – als Komplettpaket oder einzelne Bausteine.</p>
-        </div>
-
-        <div class="grid">
-          <article class="tile">
-            <h3 data-i18n="services.s1.title">Räumung & strukturierte Entsorgung</h3>
-            <p data-i18n="services.s1.desc">Wohnungen, Häuser, Garagen, Lager – sauber, organisiert, dokumentiert.</p>
-          </article>
-          <article class="tile">
-            <h3 data-i18n="services.s2.title">Demontage & Rückbau</h3>
-            <p data-i18n="services.s2.desc">Möbel, Einbauten, Küchenmodule – fachgerecht demontiert und abtransportiert.</p>
-          </article>
-          <article class="tile">
-            <h3 data-i18n="services.s3.title">Übergabefertige Aufbereitung</h3>
-            <p data-i18n="services.s3.desc">Grundreinigung, optische Ordnung, kleine Handgriffe – für einen sauberen Eindruck.</p>
-          </article>
-          <article class="tile">
-            <h3 data-i18n="services.s4.title">Fotodokumentation & Protokoll</h3>
-            <p data-i18n="services.s4.desc">Vorher/Nachher, Statusberichte, Übergabe-Check – transparent für Eigentümer & Makler.</p>
-          </article>
-          <article class="tile">
-            <h3 data-i18n="services.s5.title">Koordination weiterer Gewerke</h3>
-            <p data-i18n="services.s5.desc">Bei Bedarf koordinieren wir lokale Partner (Reinigung, Maler, Reparaturen).</p>
-          </article>
-          <article class="tile">
-            <h3 data-i18n="services.s6.title">Diskrete Abwicklung</h3>
-            <p data-i18n="services.s6.desc">Besonders geeignet bei Eigentümerwechsel, Erbschaft, Verkauf oder Neuvermietung.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section section--alt" id="ablauf">
-      <div class="container">
-        <div class="section__head">
-          <h2 data-i18n="process.title">Ablauf</h2>
-          <p data-i18n="process.subtitle">Klarer Prozess, klare Kommunikation, sauberes Ergebnis.</p>
-        </div>
-
-        <div class="process">
-          <div class="process__item">
-            <div class="badge">1</div>
-            <div>
-              <h3 data-i18n="process.p1.title">Anfrage & Objektanalyse</h3>
-              <p data-i18n="process.p1.desc">Sie senden Fotos/Infos oder wir vereinbaren einen Vor-Ort-Termin.</p>
-            </div>
+        <div class="split">
+          <div>
+            <h2>Viele Betriebe sind abhängig von Zufall.</h2>
+            <p class="muted">
+              Empfehlungen, Saison, unklare Anfragen, Preisdiskussionen – ohne messbares System entsteht
+              Unplanbarkeit. VALORIS setzt Struktur dagegen: klarer Funnel, klare Zahlen, klare Entscheidungen.
+            </p>
           </div>
-          <div class="process__item">
-            <div class="badge">2</div>
-            <div>
-              <h3 data-i18n="process.p2.title">Festpreisangebot</h3>
-              <p data-i18n="process.p2.desc">Leistungsumfang, Zeitfenster und Preis transparent zusammengefasst.</p>
-            </div>
-          </div>
-          <div class="process__item">
-            <div class="badge">3</div>
-            <div>
-              <h3 data-i18n="process.p3.title">Durchführung</h3>
-              <p data-i18n="process.p3.desc">Strukturiert, diskret, mit laufender Rückmeldung bei Bedarf.</p>
-            </div>
-          </div>
-          <div class="process__item">
-            <div class="badge">4</div>
-            <div>
-              <h3 data-i18n="process.p4.title">Fotobericht & Übergabe</h3>
-              <p data-i18n="process.p4.desc">Nachher-Bilder, Statusbericht und optional Übergabe-Checkliste/Protokoll.</p>
+          <div class="panel">
+            <h3>Die Kernidee</h3>
+            <p class="muted">
+              Nicht „mehr Reichweite“, sondern <strong>bessere Anfragen</strong>.
+              Nicht „Marketing“, sondern <strong>Auftragsstruktur</strong>.
+            </p>
+            <div class="mini-grid">
+              <div class="mini">
+                <div class="mini__title">Traffic</div>
+                <div class="mini__text">kaufbereite Suchanfragen</div>
+              </div>
+              <div class="mini">
+                <div class="mini__title">Conversion</div>
+                <div class="mini__text">aus Klicks werden Anfragen</div>
+              </div>
+              <div class="mini">
+                <div class="mini__title">Wirtschaftlichkeit</div>
+                <div class="mini__text">Kosten pro Kunde im Griff</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOR WHOM -->
-    <section class="section" id="zielgruppen">
+    <!-- SYSTEM -->
+    <section id="system" class="section section--dark">
       <div class="container">
         <div class="section__head">
-          <h2 data-i18n="forwhom.title">Für wen</h2>
-          <p data-i18n="forwhom.subtitle">Wir arbeiten bevorzugt mit klaren Ansprechpartnern und hochwertigen Standards.</p>
-        </div>
-
-        <div class="chips">
-          <span class="chip" data-i18n="forwhom.c1">Deutschsprachige Eigentümer</span>
-          <span class="chip" data-i18n="forwhom.c2">Immobilienmakler</span>
-          <span class="chip" data-i18n="forwhom.c3">Property Manager</span>
-          <span class="chip" data-i18n="forwhom.c4">Erbengemeinschaften</span>
-          <span class="chip" data-i18n="forwhom.c5">Hausverwaltungen</span>
-        </div>
-
-        <div class="note">
-          <p data-i18n="forwhom.note">
-            Hinweis: Wir erstellen projektbezogene Festpreisangebote nach Objektanalyse. Kein „Billigservice“, sondern saubere Abwicklung.
+          <h2>Das VALORIS System</h2>
+          <p class="muted">
+            Modular aufgebaut – du startest schlank, skalierst sauber. Keine Spielerei, sondern Struktur.
           </p>
         </div>
-      </div>
-    </section>
 
-    <!-- GALLERY -->
-    <section class="section" id="eindruck">
-      <div class="container">
-        <div class="section__head">
-          <h2>Eindruck</h2>
-          <p>Beispiele aus Dokumentationen (projektbezogen). Klick öffnet groß.</p>
-        </div>
+        <div class="cards">
+          <article class="card card--lift">
+            <h3>1) Analyse & Struktur</h3>
+            <p class="muted">Nachfrage, Wettbewerb, Keywords, Zahlenlogik. Ziel: klare Strategie statt Bauchgefühl.</p>
+            <ul class="list list--compact">
+              <li><span class="dot"></span>Keyword-Cluster (kaufbereit)</li>
+              <li><span class="dot"></span>Wirtschaftlichkeits-Check</li>
+              <li><span class="dot"></span>Tracking-Konzept</li>
+            </ul>
+          </article>
 
-        <div class="gallery">
-          <!-- Images 1–10 -->
-          <figure class="shot"><a href="./assets/gallery-1.jpg" class="lightbox-trigger" data-type="image"><img src="./assets/gallery-1.jpg" alt="Galerie Bild 1" loading="lazy"></a></figure>
-          <figure class="shot"><a href="./assets/gallery-2.jpg" class="lightbox-trigger" data-type="image"><img src="./assets/gallery-2.jpg" alt="Galerie Bild 2" loading="lazy"></a></figure>
-          <figure class="shot"><a href="./assets/gallery-3.jpg" class="lightbox-trigger" data-type="image"><img src="./assets/gallery-3.jpg" alt="Galerie Bild 3" loading="lazy"></a></figure>
-          <figure class="shot"><a href="./assets/gallery-4.jpg" class="lightbox-trigger" data-type="image"><img src="./assets/gallery-4.jpg" alt="Galerie Bild 4" loading="lazy"></a></figure>
-          <figure class="shot"><a href="./assets/gallery-5.jpg" class="lightbox-trigger" data-type="image"><img src="./assets/gallery-5.jpg" alt="Galerie Bild 5" loading="lazy"></a></figure>
-          <figure class="shot"><a href="./assets/gallery-6.jpg" class="lightbox-trigger" data-type="image"><img src="./assets/gallery-6.jpg" alt="Galerie Bild 6" loading="lazy"></a></figure>
-          <figure class="shot"><a href="./assets/gallery-7.jpg" class="lightbox-trigger" data-type="image"><img src="./assets/gallery-7.jpg" alt="Galerie Bild 7" loading="lazy"></a></figure>
-          <figure class="shot"><a href="./assets/gallery-8.jpg" class="lightbox-trigger" data-type="image"><img src="./assets/gallery-8.jpg" alt="Galerie Bild 8" loading="lazy"></a></figure>
-          <figure class="shot"><a href="./assets/gallery-9.jpg" class="lightbox-trigger" data-type="image"><img src="./assets/gallery-9.jpg" alt="Galerie Bild 9" loading="lazy"></a></figure>
-          <figure class="shot"><a href="./assets/gallery-10.jpg" class="lightbox-trigger" data-type="image"><img src="./assets/gallery-10.jpg" alt="Galerie Bild 10" loading="lazy"></a></figure>
+          <article class="card card--lift">
+            <h3>2) Systemaufbau</h3>
+            <p class="muted">Landingpage + Tracking + Google Ads Struktur – sauber aufgesetzt und messbar.</p>
+            <ul class="list list--compact">
+              <li><span class="dot"></span>Conversion-Copy</li>
+              <li><span class="dot"></span>Formular/Call-Tracking</li>
+              <li><span class="dot"></span>Ads-Struktur + Negatives</li>
+            </ul>
+          </article>
 
-          <!-- Videos 1–4 (thumbnail = first frame). Click opens in lightbox with controls -->
-          <figure class="shot">
-            <a href="./assets/video-1.mp4" class="lightbox-trigger" data-type="video">
-              <video muted playsinline preload="metadata">
-                <source src="./assets/video-1.mp4" type="video/mp4">
-              </video>
-            </a>
-          </figure>
-          <figure class="shot">
-            <a href="./assets/video-2.mp4" class="lightbox-trigger" data-type="video">
-              <video muted playsinline preload="metadata">
-                <source src="./assets/video-2.mp4" type="video/mp4">
-              </video>
-            </a>
-          </figure>
-          <figure class="shot">
-            <a href="./assets/video-3.mp4" class="lightbox-trigger" data-type="video">
-              <video muted playsinline preload="metadata">
-                <source src="./assets/video-3.mp4" type="video/mp4">
-              </video>
-            </a>
-          </figure>
-          <figure class="shot">
-            <a href="./assets/video-4.mp4" class="lightbox-trigger" data-type="video">
-              <video muted playsinline preload="metadata">
-                <source src="./assets/video-4.mp4" type="video/mp4">
-              </video>
-            </a>
-          </figure>
+          <article class="card card--lift">
+            <h3>3) Optimierung & Führung</h3>
+            <p class="muted">Kontinuierliche Verbesserung: Kosten pro Anfrage, Qualität, Skalierung.</p>
+            <ul class="list list--compact">
+              <li><span class="dot"></span>Keyword- & Anzeigentests</li>
+              <li><span class="dot"></span>Landingpage-Iterationen</li>
+              <li><span class="dot"></span>Monatliches Reporting</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section section--alt" id="kontakt">
+    <!-- ABLAUF -->
+    <section id="ablauf" class="section">
       <div class="container">
         <div class="section__head">
-          <h2 data-i18n="contact.title">Kontakt</h2>
-          <p data-i18n="contact.subtitle">Senden Sie kurz die Eckdaten – wir melden uns zeitnah mit einem Vorschlag.</p>
+          <h2>Ablauf</h2>
+          <p class="muted">Klar, kurz, führend. So entsteht ein System, das man steuern kann.</p>
         </div>
 
+        <div class="steps">
+          <div class="step">
+            <div class="step__nr">01</div>
+            <div class="step__body">
+              <h3>Ersteinschätzung</h3>
+              <p class="muted">Ziel, Branche, Region, Kapazität – wir prüfen Machbarkeit & Hebel.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__nr">02</div>
+            <div class="step__body">
+              <h3>Strukturplan</h3>
+              <p class="muted">Keyword-Logik + Funnel + Messpunkte. Du siehst, was wir warum tun.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__nr">03</div>
+            <div class="step__body">
+              <h3>Systemaufbau</h3>
+              <p class="muted">Landingpage, Tracking, Ads-Struktur. Schlank starten, sauber bauen.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__nr">04</div>
+            <div class="step__body">
+              <h3>Optimierung</h3>
+              <p class="muted">Kosten pro Anfrage/Kunde runter, Qualität rauf. Entscheidungen auf Datenbasis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section section--dark">
+      <div class="container">
         <div class="contact">
-          <form name="freiraum-mallorca" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
-            <input type="hidden" name="form-name" value="freiraum-mallorca" />
-            <p class="hidden">
-              <label>Don’t fill this out: <input name="bot-field" /></label>
+          <div class="contact__text">
+            <h2>Kostenfreie Ersteinschätzung</h2>
+            <p class="muted">
+              Kurze Angaben reichen. Ich melde mich mit einer klaren Einschätzung (Hebel, Aufwand, nächster Schritt).
             </p>
+            <div class="contact__meta">
+              <div class="meta">
+                <div class="meta__k">Antwortzeit</div>
+                <div class="meta__v">in der Regel &lt; 24h</div>
+              </div>
+              <div class="meta">
+                <div class="meta__k">Format</div>
+                <div class="meta__v">Telefon / WhatsApp / E-Mail</div>
+              </div>
+            </div>
+          </div>
 
+          <form class="form" id="leadForm">
             <div class="form__row">
               <label>
-                <span data-i18n="contact.name">Name</span>
-                <input name="name" type="text" autocomplete="name" required />
+                <span>Name</span>
+                <input name="name" autocomplete="name" required placeholder="Vorname Nachname" />
               </label>
               <label>
-                <span data-i18n="contact.email">E-Mail</span>
-                <input name="email" type="email" autocomplete="email" required />
+                <span>Unternehmen</span>
+                <input name="company" required placeholder="Firma / Branche" />
               </label>
             </div>
 
             <div class="form__row">
               <label>
-                <span data-i18n="contact.phone">Telefon (optional)</span>
-                <input name="phone" type="tel" autocomplete="tel" />
+                <span>E-Mail</span>
+                <input name="email" type="email" autocomplete="email" required placeholder="name@firma.de" />
               </label>
               <label>
-                <span data-i18n="contact.location">Objekt-Ort (Mallorca)</span>
-                <input name="location" type="text" placeholder="z.B. Palma / Santa Ponsa / Alcúdia" required />
+                <span>Telefon (optional)</span>
+                <input name="phone" autocomplete="tel" placeholder="+49 ..." />
               </label>
             </div>
 
             <label>
-              <span data-i18n="contact.details">Kurzbeschreibung</span>
-              <textarea name="details" rows="6" placeholder="Umfang, Frist, Besonderheiten (Etage, Zugänge, Fotos-Link etc.)" required></textarea>
+              <span>Worum geht’s?</span>
+              <textarea name="message" rows="5" required placeholder="Branche, Region, aktueller Stand, Wunschziel …"></textarea>
             </label>
 
-            <div class="form__actions">
-              <button class="btn" type="submit" data-i18n="contact.send">Anfrage senden</button>
-              <p class="form__hint" data-i18n="contact.hint">
-                Tipp: Wenn Sie Fotos/Video haben, fügen Sie einen Link ein (iCloud/Drive/Dropbox).
-              </p>
-            </div>
+            <label class="consent">
+              <input type="checkbox" required />
+              <span>
+                Ich stimme zu, dass meine Angaben zur Kontaktaufnahme verarbeitet werden.
+                <a href="#" onclick="alert('Hier später Datenschutzerklärung verlinken.'); return false;">Datenschutz</a>
+              </span>
+            </label>
+
+            <button class="btn btn--full" type="submit">Ersteinschätzung anfragen</button>
+            <p class="muted small" id="formStatus" aria-live="polite"></p>
           </form>
-
-          <aside class="side">
-            <div class="side__box">
-              <h3 data-i18n="contact.boxTitle">Direktkontakt</h3>
-              <p class="muted" data-i18n="contact.boxDesc">
-                Tragen Sie hier später Ihre Kontaktdaten ein (Telefon/E-Mail). Für den Start reicht das Formular.
-              </p>
-              <ul class="list">
-                <li><span class="gold">E-Mail:</span> <a class="muted" href="mailto:freiraum-zwickau@gmx.de">freiraum-zwickau@gmx.de</a></li>
-              </ul>
-            </div>
-
-            <div class="side__box">
-              <h3 data-i18n="contact.boxArea">Einsatzgebiet</h3>
-              <p class="muted" data-i18n="contact.boxAreaDesc">
-                Mallorca – projektweise Einsätze, planbar gebündelt. Premium-Objekte & saubere Übergaben.
-              </p>
-            </div>
-          </aside>
         </div>
-
-        <footer class="footer">
-          <p class="footer__brand">
-            <span class="brand__mark brand__mark--sm">FR</span>
-            <span>FreiRaum Mallorca</span>
-          </p>
-          <p class="footer__meta muted">
-            <span data-i18n="footer.note">Impressum/Datenschutz kannst du später ergänzen (für Deutschland wichtig).</span>
-          </p>
-        </footer>
       </div>
     </section>
   </main>
 
-  <!-- Lightbox Overlay -->
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox__close" id="lightboxClose" aria-label="Schließen">×</button>
-    <div class="lightbox__content" id="lightboxContent"></div>
-  </div>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="footer__brand">VALORIS Auftragsstruktur</div>
+        <div class="footer__note">Messbare Systeme zur wirtschaftlichen Kundengewinnung.</div>
+      </div>
+
+      <div class="footer__right">
+        <a href="#top">Nach oben</a>
+        <span class="sep">•</span>
+        <a href="#" onclick="alert('Impressum-Link einsetzen.'); return false;">Impressum</a>
+        <span class="sep">•</span>
+        <a href="#" onclick="alert('Datenschutz-Link einsetzen.'); return false;">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
-
-  <!-- Lightbox JS -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const lb = document.getElementById("lightbox");
-      const lbContent = document.getElementById("lightboxContent");
-      const lbClose = document.getElementById("lightboxClose");
-
-      function closeLightbox(){
-        lb.classList.remove("is-open");
-        lb.setAttribute("aria-hidden", "true");
-        lbContent.innerHTML = "";
-      }
-
-      document.querySelectorAll(".lightbox-trigger").forEach(a => {
-        a.addEventListener("click", (e) => {
-          e.preventDefault();
-          const type = a.dataset.type;
-          const href = a.getAttribute("href");
-
-          lb.classList.add("is-open");
-          lb.setAttribute("aria-hidden", "false");
-
-          if(type === "image"){
-            lbContent.innerHTML = `<img src="${href}" alt="">`;
-          } else if(type === "video"){
-            lbContent.innerHTML = `
-              <video controls autoplay playsinline>
-                <source src="${href}" type="video/mp4">
-              </video>
-            `;
-          }
-        });
-      });
-
-      lbClose.addEventListener("click", closeLightbox);
-      lb.addEventListener("click", (e) => {
-        if(e.target === lb) closeLightbox();
-      });
-      document.addEventListener("keydown", (e) => {
-        if(e.key === "Escape") closeLightbox();
-      });
-    });
-  </script>
 </body>
 </html>
